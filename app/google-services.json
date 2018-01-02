@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "701753797330",
+    "firebase_url": "https://tasker-295b0.firebaseio.com",
+    "project_id": "tasker-295b0",
+    "storage_bucket": "tasker-295b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701753797330:android:858f211a401b666d",
+        "android_client_info": {
+          "package_name": "killbit.taskrabbit.tasker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701753797330-hjo93v9pp8jms8pr4nnqt913ipvd5a8f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "killbit.taskrabbit.tasker",
+            "certificate_hash": "4c10168880440f4282861c08d6a65eebea9fc4b3"
+          }
+        },
+        {
+          "client_id": "701753797330-d5tnh5k0i0b5n9o92bie1l6dusbvvfv6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "killbit.taskrabbit.tasker",
+            "certificate_hash": "eb1d01e035d56fd37ec2a4bbbc14238e25d9a995"
+          }
+        },
+        {
+          "client_id": "701753797330-s4ffs3spu4tqnhc0hkr55fn1r66p5b7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjbwn9Ur1WEE6O81yJ2ZFqgO59ufcfYxE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701753797330-s4ffs3spu4tqnhc0hkr55fn1r66p5b7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

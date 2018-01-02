@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\TaskRabbit-staging\TaskRabbit-staging\TaskRabbit.iml" filepath="D:\TaskRabbit-staging\TaskRabbit-staging\TaskRabbit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskRabbitTasker.iml" filepath="$PROJECT_DIR$/TaskRabbitTasker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

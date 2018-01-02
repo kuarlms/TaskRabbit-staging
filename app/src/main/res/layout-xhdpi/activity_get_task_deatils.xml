@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f2f2"
+   >
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_normal"
+        android:id="@+id/tb_task"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_sub"
+        android:background="@color/white"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/tb_task"
+
+        android:layout_marginBottom="25dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="13dp"
+            android:textAllCaps="false"
+            android:letterSpacing="0.1"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:textSize="13dp"
+            android:textColor="@color/Black_nb"
+            android:text="Sub-Category"/>
+
+
+        <Spinner
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.05"
+            android:textSize="14dp"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:id="@+id/spinner_task"></Spinner>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_below="@+id/ll_sub">
+    <LinearLayout
+        android:layout_below="@+id/ll_sub"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/linearLayout">
+
+    <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/card_task_address"
+            android:addStatesFromChildren="true">
+
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imageViewta5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/address"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textView15ta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageViewta5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/imageViewta5"
+                    android:layout_toRightOf="@+id/imageViewta5"
+                    android:gravity="center_vertical"
+                    android:text="TASK ADDRESS"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/Black_nb"
+                    android:textSize="13dp"
+                    fontPath="fonts/Montserrat-Regular.ttf"
+                     />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="20"
+            android:orientation="horizontal"
+            android:layout_below="@id/textView15ta"
+            android:layout_alignLeft="@+id/textView15ta"
+            android:layout_alignStart="@+id/textView15ta"
+            android:addStatesFromChildren="true"
+            android:layout_marginTop="0dp">
+                <EditText
+                    android:id="@+id/textView1x6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.05"
+                    android:layout_weight="18"
+                    fontPath="fonts/Montserrat-Regular.ttf"
+                    android:background="@null"
+                    android:hint="What is the task location?"
+                    android:focusableInTouchMode="false"
+                    android:textSize="11dp" />
+
+                    <ImageButton
+                    android:id="@+id/buttonz12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_plus"
+                    android:padding="3dp"
+                   />
+        </LinearLayout>
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/card_when"
+            android:addStatesFromChildren="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imageViewsz5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/when"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textViewwhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageViewsz5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/imageViewsz5"
+                    android:layout_toRightOf="@+id/imageViewsz5"
+                    android:text="WHEN"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/Black_nb"
+                    android:textSize="13dp"
+                    android:letterSpacing="0.1"
+                    fontPath="fonts/Montserrat-Regular.ttf" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="20"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/textViewwhen"
+                    android:layout_alignLeft="@+id/textViewwhen"
+                    android:layout_alignStart="@+id/textViewwhen"
+                    android:layout_marginTop="0dp">
+                    <EditText
+                        android:id="@+id/textView1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Now or Later ?"
+                        android:letterSpacing="0.05"
+                        android:background="@null"
+                        fontPath="fonts/Montserrat-Regular.ttf"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="18"
+                        android:textSize="11dp" />
+
+                    <ImageButton
+                        android:id="@+id/button1s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_plus"
+                        android:padding="3dp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/card_task"
+            android:addStatesFromChildren="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/task"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:layout_toRightOf="@+id/imageView5"
+                    android:text="TASK DETAILS"
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/Black_nb"
+                    android:textSize="13dp"
+                    fontPath="fonts/Montserrat-Regular.ttf"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="20"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/textView15"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_marginTop="0dp">
+                    <EditText
+                        android:id="@+id/textView16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="What else we should know?"
+                        android:background="@null"
+                        fontPath="fonts/Montserrat-Regular.ttf"
+                        android:focusableInTouchMode="false"
+                        android:layout_weight="18"
+                        android:letterSpacing="0.05"
+                        android:textSize="11dp" />
+
+                    <ImageButton
+                        android:id="@+id/button12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_plus"
+                        android:padding="3dp"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/card_vehice"
+            android:addStatesFromChildren="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imageViewvr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/vehicle"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/textView15vr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageViewvr"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_toEndOf="@+id/imageViewvr"
+                    android:layout_toRightOf="@+id/imageViewvr"
+                    android:text="VEHICLE REQUIREMENT"
+                    android:textAllCaps="true"
+                    android:letterSpacing="0.1"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/Black_nb"
+                    android:textSize="13dp"
+                    fontPath="fonts/Montserrat-Regular.ttf" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="20"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/textView15vr"
+                    android:layout_alignLeft="@+id/textView15vr"
+                    android:layout_alignStart="@+id/textView15vr"
+                    android:layout_marginTop="0dp">
+                    <EditText
+                        android:id="@+id/textView1zx6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:background="@null"
+                        android:focusableInTouchMode="false"
+                        fontPath="fonts/Montserrat-Regular.ttf"
+                        android:hint="is Car or Truck required ?"
+                        android:layout_weight="18"
+                        android:letterSpacing="0.05"
+                        android:textSize="11dp" />
+
+                    <ImageButton
+                        android:id="@+id/button1xz2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        fontPath="fonts/Montserrat-Regular.ttf"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/ic_plus"
+                        android:padding="3dp"
+                       />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/scrollView"
+        style="@style/signup_with_email"
+        android:textColor="#fdfdf9"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:letterSpacing="0.05"
+        android:text="Find a Tasker" />
+
+
+</RelativeLayout>

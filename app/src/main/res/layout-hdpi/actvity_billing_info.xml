@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_normal"
+        android:id="@+id/tb_task"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tb_task"
+        android:id="@+id/lltasker"
+        android:visibility="gone"
+        android:gravity="center_horizontal">
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/a"
+        android:layout_margin="15dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_confirm_tasker_pic"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv_confim_tasker_name"
+    android:textStyle="bold"
+    android:text="Name"
+    android:textSize="16sp"
+    android:textColor="@color/Black_nb"
+    android:gravity="center_horizontal"
+    android:visibility="invisible"
+    android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_confim_tasker_cost"
+            android:textStyle="normal"
+            android:text="Cost"
+            android:visibility="invisible"
+            android:textSize="14sp"
+            android:textColor="@color/Black_nb"
+            android:gravity="center_horizontal"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltasker"
+        android:id="@+id/ll_carddet"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_confim_tasker_card_number"
+            android:hint="XXXX XXXX XXXX XXXX"
+            android:inputType="number"
+            android:layout_marginBottom="10sp"
+            android:paddingBottom="8sp"
+            android:textSize="12sp"
+            android:digits="01234 56789"
+            android:maxLength="19"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            android:drawableRight="@drawable/ic_card"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10sp">
+        <EditText
+            android:id="@+id/et_confim_tasker_card_exp_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="MM"
+            android:paddingBottom="8sp"
+            android:textSize="12sp"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:textColor="@color/com_facebook_button_background_color_disabled" />
+    <EditText
+        android:id="@+id/et_confim_tasker_card_exp_dateYear"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:hint="YY"
+        android:paddingBottom="8sp"
+        android:textSize="12sp"
+        fontPath="fonts/Montserrat-Regular.ttf"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textColor="@color/com_facebook_button_background_color_disabled" />
+</LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_confim_tasker_card_cvv"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="CVV"
+            android:paddingBottom="8sp"
+            android:textSize="12sp"
+            android:layout_marginBottom="10sp"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:minLines="2"
+            android:gravity="center_horizontal"
+            fontPath="fonts/Montserrat-Light.ttf"
+            android:textSize="9sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_confim_tasker_payment_message"
+            android:text="You will not be charged until Tasker completes the task."
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_confim_tasker_payment"
+            android:text="Save Changes"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            style="@style/signup_with_email"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/ll_carddet"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:visibility="gone"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/tv_confim_tasker_cancellation_fee"
+        android:text="Cancellation fees"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/red"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textStyle="bold"
+        android:id="@+id/tv_confim_tasker_trust"
+        android:text="Trust and Saftey Fee"/>
+
+
+</LinearLayout>
+</RelativeLayout>

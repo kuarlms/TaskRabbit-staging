@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:elevation="3dp"
+        android:id="@+id/iv_tasker_details_adp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_tasker_details_adp"
+        android:gravity="center_horizontal"
+        android:id="@+id/ll1"
+        android:layout_margin="10sp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/Black_nb"
+            android:text="Name"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_weight="4"
+            android:textSize="18sp"
+            android:letterSpacing="0.1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/textcolor1"
+            android:text="100% Positive Review "
+            android:layout_weight="3"
+            android:textSize="14sp"
+            android:letterSpacing="0.1"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_review"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/textcolor1"
+            android:text="Verified ?"
+            android:letterSpacing="0.1"
+            android:layout_weight="3"
+            android:gravity="center"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:textSize="12sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_iv_verifed"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:id="@+id/btn_tasker_adp_rate"
+            android:text="$$$"
+            android:paddingVertical="12dp"
+            android:elevation="4dp"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="0.05"
+            android:background="@drawable/button_save"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labelcolor"
+            android:text="@string/com_facebook_device_auth_instructions"
+            android:gravity="center"
+            android:textSize="12sp"
+            fontPath="fonts/Montserrat-Light.ttf"
+            android:layout_marginTop="7sp"
+            android:layout_marginBottom="25sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_tearms_txt_description"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@id/ll1"
+        android:orientation="vertical"
+
+        android:id="@+id/ll2">
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="20sp"
+                    android:layout_weight="2"
+                    android:background="@color/windowBackground"
+                android:gravity="center_vertical"
+                android:elevation="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:layout_gravity="center_vertical"
+                    android:paddingHorizontal="20sp"
+                    android:textColor="@color/Black_nb"
+                    fontPath="fonts/Montserrat-SemiBold.ttf"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.05"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:paddingHorizontal="20sp"
+                    android:textColor="@color/Black_nb"
+                    android:id="@+id/tv_adp_tasker_review_btn"
+                    fontPath="fonts/Montserrat-SemiBold.ttf"
+                    android:textSize="16sp"
+                    android:letterSpacing="0.05"
+                    />
+            </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        fontPath="fonts/Montserrat-Light.ttf"
+        android:textSize="12sp"
+        android:id="@+id/tv_adp_tasker_about"
+        android:padding="10dp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@android:color/black"
+        android:layout_below="@id/ll2"
+        android:visibility="gone"
+        android:id="@+id/ll3"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="#fafafa"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:visibility="visible"
+            android:layout_below="@id/ll3"
+            android:id="@+id/ll4"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black_nb"
+                android:text="Tasker since ..."
+                fontPath="fonts/Montserrat-Light.ttf"
+                android:gravity="left|center_vertical"
+                android:layout_marginVertical="10dp"
+                android:textSize="15sp"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_since"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black_nb"
+                android:text="Done 000 tasks"
+                android:gravity="left|center_vertical"
+                android:textSize="15sp"
+                android:letterSpacing="0.05"
+                android:layout_marginVertical="5dp"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_number_of_tasks"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black_nb"
+                android:text="Quick word"
+                android:textSize="15sp"
+                android:letterSpacing="0.05"
+                android:layout_marginVertical="5dp"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_quick_notes"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_below="@id/ll4"
+            android:id="@+id/ll5"
+            android:orientation="vertical"
+            android:background="@android:color/black"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/ll5"
+            android:id="@+id/ll6"
+            android:visibility="visible"
+            android:orientation="vertical">
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="When I'm tasking I always make sure to..."
+                android:gravity="center|left"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:textSize="14sp"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_title1"/>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black_nb"
+            android:text="@string/task_details"
+            android:gravity="left|center_vertical"
+            android:letterSpacing="0.05"
+            fontPath="fonts/Montserrat-Light.ttf"
+            android:textSize="13sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="When I'm not tasking"
+                android:gravity="center|left"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:textSize="14sp"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_title2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black_nb"
+            android:text="@string/task_details"
+            android:gravity="left|center_vertical"
+            fontPath="fonts/Montserrat-Light.ttf"
+            android:textSize="13sp"
+            android:letterSpacing="0.05"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="I'm the right person for the job"
+                android:gravity="center|left"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:textSize="14sp"
+                android:letterSpacing="0.05"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_title3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Black_nb"
+            android:text="@string/task_details"
+            android:gravity="left|center_vertical"
+            android:textSize="13sp"
+            fontPath="fonts/Montserrat-Light.ttf"
+            android:letterSpacing="0.05"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details3"/>
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ll6"
+    android:visibility="visible"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Recent things people have said about me :"
+        android:gravity="center|left"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:textSize="14sp"
+        android:letterSpacing="0.05"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_adp_tasker_pleople_said"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:weightSum="2.3"
+       android:padding="0sp"
+       android:layout_weight="14"
+       android:orientation="vertical">
+
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:layout_marginTop="5dp"
+           android:weightSum="4"
+           android:id="@+id/ll_rev1">
+           <ImageView
+               android:layout_width="65dp"
+               android:layout_height="65dp"
+               android:id="@+id/iv_adp_rew_pic"
+               android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:weightSum="10">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:padding="3dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name"
+                       fontPath="fonts/Montserrat-Regular.ttf"
+                       android:textSize="16sp"
+                       android:id="@+id/tv_adp_rew_name"
+                       android:textColor="@color/Black_nb"
+                       android:layout_alignParentLeft="true"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="00/00/00"
+                       fontPath="fonts/Montserrat-Light.ttf"
+                       android:textSize="13sp"
+                       android:layout_alignRight="@+id/tv_adp_rew_name"
+                       android:layout_alignParentRight="true"
+                       android:paddingLeft="5dp"
+                       android:id="@+id/tv_adp_rew_date"
+                       />
+
+               </RelativeLayout>
+
+               <RatingBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left"
+                   android:layout_alignParentLeft="true"
+                   android:paddingLeft="5dp"
+                   android:scaleX="0.5"
+                   android:scaleY="0.5"
+                   android:isIndicator="true"
+                   android:numStars="5"
+                   android:stepSize="1"
+                   android:textSize="0sp"
+                   android:id="@+id/rattingbar"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/chat"
+                   android:gravity="left"
+                   fontPath="fonts/Montserrat-Light.ttf"
+                   android:textColor="@color/Black_nb"
+                   android:layout_toLeftOf="@+id/tv_adp_rew_name"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/tv_adp_rew_description"
+                   android:textSize="13sp"
+                   />
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="5dp"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:id="@+id/ll_rev2"
+           android:weightSum="4">
+           <ImageView
+               android:layout_width="65dp"
+               android:layout_height="65dp"
+               android:layout_weight="1"
+               android:layout_gravity="top"
+               android:id="@+id/iv_adp_rew_pic2"
+               android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:weightSum="10">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:gravity="center"
+                   android:padding="3dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name"
+                       fontPath="fonts/Montserrat-Regular.ttf"
+                       android:textSize="16sp"
+                       android:id="@+id/tv_adp_rew_name2"
+                       android:textColor="@color/Black_nb"
+                       android:layout_alignParentLeft="true"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       fontPath="fonts/Montserrat-Light.ttf"
+                       android:textSize="13sp"
+                       android:text="00/00/00"
+                       android:layout_toLeftOf="@+id/tv_adp_rew_name2"
+                       android:layout_alignParentRight="true"
+                       android:id="@+id/tv_adp_rew_date2"
+                       />
+
+               </RelativeLayout>
+
+               <RatingBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:scaleX="0.5"
+                   android:scaleY="0.5"
+                   android:isIndicator="true"
+                   android:numStars="5"
+                   android:stepSize="1"
+                   android:padding="10sp"
+                   android:textSize="16sp"
+                   android:layout_toLeftOf="@+id/tv_adp_rew_name"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/rattingbar2" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/chat"
+                   android:layout_weight="5"
+                   android:gravity="left"
+                   fontPath="fonts/Montserrat-Light.ttf"
+                   android:textColor="@color/Black_nb"
+                   android:layout_toLeftOf="@+id/tv_adp_rew_name2"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/tv_adp_rew_description2"
+                   android:textStyle="normal"
+                   android:padding="10sp"
+                   android:textSize="13sp"
+                   />
+           </LinearLayout>
+
+
+
+          </LinearLayout>
+
+
+          </LinearLayout>
+
+          </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</ScrollView>

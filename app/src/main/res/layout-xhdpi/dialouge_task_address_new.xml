@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+
+    >
+
+<include
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    layout="@layout/toolbar_dialouge"
+    android:id="@+id/tb"/>
+
+    <LinearLayout
+        android:layout_below="@id/tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/et_dia_task_address"
+        android:background="@color/white"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="14dp"
+        android:padding="15dp"
+        android:layout_weight="3"
+        android:imeOptions="actionGo"
+        android:hint="@string/task_address" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="2sp"
+    android:background="@color/colorPrimary"></LinearLayout>
+        <EditText
+            android:id="@+id/et_dia_task_address_city"
+            android:background="@color/white"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:imeOptions="actionGo"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:hint="Enter city here." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/colorPrimary"></LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_task_dialouge"
+            style="@style/done"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Done"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

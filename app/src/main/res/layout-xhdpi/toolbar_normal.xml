@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="8dp">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/normal_back_base"
+        android:layout_marginLeft="6dp">
+     <ImageButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ic_arrow_back"
+         android:scaleX=".65"
+         android:scaleY=".65"
+         android:background="@android:color/transparent"
+         android:id="@+id/tb_normal_back"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_normal_title"
+        android:text="@string/app_name"
+        android:textSize="16sp"
+        android:layout_marginLeft="8sp"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/normal_back_base"
+        android:layout_centerVertical="true"
+
+       />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_tb_normal_logo"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/rabbit"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_chat"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:id="@+id/tb_normal_menu"/>
+
+
+</RelativeLayout>

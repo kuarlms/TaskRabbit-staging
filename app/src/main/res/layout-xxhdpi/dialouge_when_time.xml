@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:stepper="http://schemas.android.com/apk/res-auto"
+    xmlns:picker="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <include
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    layout="@layout/toolbar_dialouge"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:padding="10dp">
+
+    <android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="7"
+    app:reverseLayout="true"
+    android:background="@color/cardview_light_background"
+    android:id="@+id/rv_task_when_grid">
+
+
+    </android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/tv_dialouge_when_day"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="3dp"
+            />
+        <com.sgiosviews.SGPickerView
+            android:id="@+id/pickerView"
+            android:layout_weight="11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            picker:defaultTextColor="#ccc"
+            picker:selectedTextColor="@color/Black_nb"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_task_dialouge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        style="@style/done"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="Done" />
+</LinearLayout>
+
+</RelativeLayout>

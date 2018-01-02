@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="3dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/a"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_tasker_details_adp"/>
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_tasker_details_adp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/Black_nb"
+            android:text="name"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/Black_nb"
+            android:text="Review %"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_review"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/Black_nb"
+            android:text="Verified ?"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_iv_verifed"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="15dp"
+            android:id="@+id/btn_tasker_adp_rate"
+            android:text="$$$"
+            android:layout_weight="2"
+            style="@style/done"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            android:text="@string/com_facebook_device_auth_instructions"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_tearms_txt_description"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="4"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:elevation="3dp"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:layout_weight="1"
+            android:id="@+id/tv_adp_tasker_review_btn"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_adp_tasker_about"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="2px"
+    android:background="@android:color/black"></LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/Black_nb"
+                android:text="Tasker since ..."
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textStyle="normal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_since"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/Black_nb"
+                android:text="Done 000 tasks"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_number_of_tasks"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textColor="@color/Black_nb"
+                android:text="Quick word"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/tv_adp_tasker_quick_notes"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@android:color/black"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            android:text="@string/task_details"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            android:text="@string/task_details"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/com_facebook_button_background_color_disabled"
+            android:text="@string/task_details"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tv_adp_tasker_details3"/>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:padding="4dp"
+    android:layout_weight="12"
+    android:weightSum="10"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:text="What people said about me..."
+        android:layout_weight="2"
+        android:gravity="center|left"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_adp_tasker_pleople_said"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:weightSum="2"
+       android:padding="10dp"
+       android:layout_weight="14"
+       android:orientation="vertical">
+
+       <LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:weightSum="4"
+           android:id="@+id/ll_rev1">
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:id="@+id/iv_adp_rew_pic"
+               android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="3"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="10">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:gravity="center"
+                   android:padding="3dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name"
+                       android:id="@+id/tv_adp_rew_name"
+                       android:textStyle="bold"
+                       android:layout_alignParentLeft="true"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="00/00/00"
+                       android:layout_toLeftOf="@+id/tv_adp_rew_name"
+                       android:layout_alignParentRight="true"
+                       android:id="@+id/tv_adp_rew_date"
+                       android:textStyle="bold"
+                       />
+
+               </RelativeLayout>
+
+               <RatingBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:layout_gravity="center"
+                   android:layout_weight="3"
+                    style="@style/RatingBar"
+                   android:id="@+id/rattingbar"/>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:text="@string/chat"
+                   android:layout_weight="5"
+                   android:gravity="left"
+                   android:layout_toLeftOf="@+id/tv_adp_rew_name"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/tv_adp_rew_description"
+                   android:textStyle="normal"
+                   />
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="5dp"
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:id="@+id/ll_rev2"
+           android:weightSum="4">
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:id="@+id/iv_adp_rew_pic2"
+               android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="3"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:weightSum="10">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2"
+                   android:gravity="center"
+                   android:padding="3dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name"
+                       android:id="@+id/tv_adp_rew_name2"
+                       android:textStyle="bold"
+                       android:layout_alignParentLeft="true"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="00/00/00"
+                       android:layout_toLeftOf="@+id/tv_adp_rew_name2"
+                       android:layout_alignParentRight="true"
+                       android:id="@+id/tv_adp_rew_date2"
+                       android:textStyle="bold"
+                       />
+
+               </RelativeLayout>
+
+               <RatingBar
+                   android:layout_width="wrap_content"
+                   android:layout_height="0dp"
+                   android:layout_gravity="center"
+                   style="@style/RatingBar"
+                   android:id="@+id/rattingbar2"
+                   android:layout_weight="3" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:text="@string/chat"
+                   android:layout_weight="5"
+                   android:gravity="left"
+                   android:layout_toLeftOf="@+id/tv_adp_rew_name2"
+                   android:layout_alignParentRight="true"
+                   android:id="@+id/tv_adp_rew_description2"
+                   android:textStyle="normal"
+                   />
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+       </ScrollView>
+
+
+
+
+
+</RelativeLayout>

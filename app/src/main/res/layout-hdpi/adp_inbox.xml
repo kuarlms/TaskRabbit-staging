@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="2sp"
+
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="20sp"
+        android:paddingHorizontal="10sp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="1sp"
+        android:elevation="3sp"
+        android:id="@+id/ll_rev1">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/iv_adp_rew_pic"
+            android:layout_marginRight="5sp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="3dp"
+           >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:paddingHorizontal="0sp">
+
+                <TextView
+                    android:id="@+id/tv_adp_rew_name"
+                    fontPath="fonts/Montserrat-SemiBold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:drawableRight="@drawable/round"
+                    android:text="Name"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/Black_nb"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_adp_rew_date"
+                    fontPath="fonts/Montserrat-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:textSize="10sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="5sp"
+                    android:text="00/00/00" />
+
+            </RelativeLayout>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="2dp"
+                android:letterSpacing="0.1"
+            android:gravity="center_vertical"
+            android:text="Looking for..."
+            fontPath="fonts/Montserrat-Regular"
+            android:textColor="#a9a9a9"
+                android:textSize="11sp"
+            android:id="@+id/tv_adp_inbox_looking"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:gravity="left|center_vertical"
+                android:maxLines="2"
+                android:textSize="9sp"
+                android:letterSpacing="0.05"
+                android:textColor="@color/textcolor1"
+                fontPath="fonts/Montserrat-Regular"
+                android:layout_toLeftOf="@+id/tv_adp_rew_name"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_adp_rew_description"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

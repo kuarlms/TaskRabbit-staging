@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#f4f2f2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="#fcfcf9"
+        android:id="@+id/linearLayout7">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Review Our App"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="30dp"
+        android:background="#fcfcf9"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout8">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frequently Asked Question"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout10"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Call Member Service"
+                    android:textColor="#6d6d6d"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_alignLeft="@+id/textView35"
+                    android:layout_alignStart="@+id/textView35"
+                    android:layout_below="@+id/textView35"
+                    android:textColor="#b8b8b8"
+                    android:text="Available weekdays 7am - 6pm PT and" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#b8b8b8"
+                    android:layout_alignLeft="@+id/textView36"
+                    android:layout_alignStart="@+id/textView36"
+                    android:layout_below="@+id/textView36"
+                    android:text="Weekends 9am - 3pm PT" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout10"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout9">
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+            <TextView
+                android:id="@+id/textView38"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Email Member"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+
+            </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout9"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout11">
+
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+            <TextView
+                android:id="@+id/textView39"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Send Feedback"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout12">
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+            <TextView
+                android:id="@+id/textView40"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Become a Tasker"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout12"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout14">
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+            <TextView
+                android:id="@+id/textView41"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Privacy Policy"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout14"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_weight="7.80">
+            <TextView
+                android:id="@+id/textView42"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Version 3.7.3(43)"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="#6d6d6d"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

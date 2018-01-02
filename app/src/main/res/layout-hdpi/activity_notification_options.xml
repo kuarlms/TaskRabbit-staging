@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#f4f2f2"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_normal"
+        android:id="@+id/tb_task"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+        android:paddingBottom="45dp"
+        android:elevation="2dp"
+        android:gravity="top"
+        android:background="@color/windowBackground"
+    android:layout_below="@+id/tb_task"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/labelcolor"
+
+        fontPath="fonts/Montserrat-Regular.ttf"
+        android:text="FORM OF COMMUNICATION"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="12dp"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black_nb"
+            android:id="@+id/checkbox_email"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:textSize="12dp"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black_nb"
+            android:id="@+id/checkbox_sms"
+            android:textStyle="bold"/>
+
+
+
+
+        <Button
+            android:id="@+id/button_change_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:textSize="13dp"
+            android:textAllCaps="false"
+            android:paddingVertical="5dp"
+            android:elevation="3dp"
+            android:background="@drawable/button_save"
+            android:text="Save Changes"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

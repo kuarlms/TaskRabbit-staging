@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_dai"
+        android:layout_weight="3"
+        layout="@layout/toolbar_normal"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_tasker_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_dai">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

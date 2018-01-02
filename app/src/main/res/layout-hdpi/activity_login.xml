@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="info.androidhive.materialtabs.ActivityLogin">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/rabitlogin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Rabbit"
+        android:textSize="20dp"
+        fontPath="fonts/Montserrat-Bold.ttf"
+        android:textColor="@color/red"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        style="@style/signup_google"
+        android:text="Google"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_google_sign_in"
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:text="Google"
+        fontPath="fonts/Montserrat-Regular.ttf"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btn_google_sign_in"
+        android:layout_marginTop="14dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text2"
+        android:layout_centerVertical="true"
+        fontPath="fonts/Montserrat-Light.ttf"
+        android:textSize="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:textSize="15dp"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:text="@string/sign_up_text3"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:textAllCaps="false"
+        android:textSize="13dp"
+        android:textColor="@color/red"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        style="@style/signup_login"
+        android:text="Log in"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button7"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:textAllCaps="false"
+        style="@style/signup_signup"
+        android:textColor="@color/textcolor1"
+        android:textSize="13dp"
+        android:text="Sign up" />
+
+
+</RelativeLayout>

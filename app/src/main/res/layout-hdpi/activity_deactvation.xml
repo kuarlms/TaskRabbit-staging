@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_normal"
+        android:id="@+id/tb_task"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/windowBackground"
+        android:paddingVertical="25sp"
+        android:elevation="3dp"
+        android:layout_below="@+id/tb_task"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textSize="12sp"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:text="@string/deact"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_change_noti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_save"
+        android:layout_marginHorizontal="10dp"
+        fontPath="fonts/Montserrat-SemiBold.ttf"
+        android:textSize="12sp"
+        android:layout_marginTop="25sp"
+        android:textColor="@color/windowBackground"
+        android:text="Deactivate" />
+
+
+</LinearLayout>

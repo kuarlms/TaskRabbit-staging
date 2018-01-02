@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    android:id="@+id/parent_item_adp_home"
+    android:addStatesFromChildren="true"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/iv_adp_home"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vehicle"
+            />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:paddingBottom="5sp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/txt_adp_cat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="15dp"
+            android:text="Sub"
+            android:letterSpacing="0.1"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/Black_nb"
+            android:textSize="18sp"/>
+
+        <TextView android:id="@+id/txt_adp_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20sp"
+            android:paddingBottom="10sp"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            fontPath="fonts/Montserrat-Regular.ttf"
+            android:layout_gravity="center_horizontal"
+            android:textSize="14sp"
+            android:text="155 $"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

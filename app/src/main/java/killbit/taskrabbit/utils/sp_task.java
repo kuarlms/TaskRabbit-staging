@@ -15,6 +15,7 @@ public class sp_task {
     public static  String Sp_zip = "Sp_zip";
     public static  String Sp_reg2 = "Sp_reg2";
     public static  String Sp_profile_pic = "Sp_profile_pic";
+    public static  String Sp_profile_doc = "Sp_profile_doc";
 
     public static  String Sp_cardnumber = "Sp_cardnumber";
     public static  String Sp_card_mm = "Sp_card_mm";

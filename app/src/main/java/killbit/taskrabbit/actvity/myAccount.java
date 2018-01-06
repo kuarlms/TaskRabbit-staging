@@ -71,19 +71,23 @@ public class myAccount extends FragmentActivity implements vehicle_list_adp.OnRe
         editor =sp.edit();
         mAPIService = ApiUtils.getAPIService();
 
-        tasks_data = new vehicle_list_data("Task History","1");
+        tasks_data = new vehicle_list_data("DOCUMENT","0");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Account","2");
+        tasks_data = new vehicle_list_data("AVAILABLTY","1");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Password","3");
+        tasks_data = new vehicle_list_data("STRIPE SETTING","2");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Notification","4");
+        tasks_data = new vehicle_list_data("ACCOUNT","3");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Billing info","5");
+        tasks_data = new vehicle_list_data("TRANSACTIONS","4");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Transactions","6");
+        tasks_data = new vehicle_list_data("PASSWORD","5");
         tasks_datas.add(tasks_data);
-        tasks_data = new vehicle_list_data("Deactivate","7");
+        tasks_data = new vehicle_list_data("TASKER PROFILE","6");
+        tasks_datas.add(tasks_data);
+        tasks_data = new vehicle_list_data("Notification","7");
+        tasks_datas.add(tasks_data);
+        tasks_data = new vehicle_list_data("Deactivate","8");
         tasks_datas.add(tasks_data);
 
 
@@ -109,44 +113,63 @@ public class myAccount extends FragmentActivity implements vehicle_list_adp.OnRe
     public void onItemClickedVehicle(int position, String data) {
 
         switch (position){
+
             case 0:
-                Intent inth = new Intent(myAccount.this,taskHistory.class);
-                startActivity(inth);
+                Intent inbillingxdoc = new Intent(myAccount.this,Document.class);
+                startActivity(inbillingxdoc);
 
                 break;
             case 1:
+                Intent inth = new Intent(myAccount.this,Availability.class);
+                startActivity(inth);
+
+                break;
+
+            case 2:
+                Intent inthstr = new Intent(myAccount.this,StripSettings.class);
+                startActivity(inthstr);
+
+                break;
+
+            case 3:
                 Intent inacc = new Intent(myAccount.this,Account.class);
                 startActivity(inacc);
 
 
                 break;
-            case 2:
-                Intent inP = new Intent(myAccount.this,changePassword.class);
-                startActivity(inP);
-                break;
-            case 3:
 
-                Intent inNo = new Intent(myAccount.this,notificationOptions.class);
-                startActivity(inNo);
-                break;
             case 4:
-
-                Intent inbilling = new Intent(myAccount.this,billingInfo.class);
-                startActivity(inbilling);
-
-
-                break;
-            case 5:
 
                 Intent inbillingax = new Intent(myAccount.this,transactionList.class);
                 startActivity(inbillingax);
 
                 break;
+
+            case 5:
+                Intent inP = new Intent(myAccount.this,changePassword.class);
+                startActivity(inP);
+                break;
+
             case 6:
+
+                Intent inNo = new Intent(myAccount.this,Signup_email_more.class);
+                startActivity(inNo);
+                break;
+
+            case 7:
+
+                Intent inbilling = new Intent(myAccount.this,notificationOptions.class);
+                startActivity(inbilling);
+
+                break;
+
+            case 8:
                 Intent inbillingx = new Intent(myAccount.this,deactvation.class);
                 startActivity(inbillingx);
 
                 break;
+
+
 
         }
 

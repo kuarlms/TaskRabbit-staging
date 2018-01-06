@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <include
+            layout="@layout/toolbar_normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pb_account_loading"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/appbar">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1">
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+           <CalendarView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></CalendarView>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1">
+
+        </FrameLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_account"
+            android:textColor="#ffffff"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:paddingVertical="5dp"
+            android:elevation="5dp"
+            android:background="@drawable/button_save"
+            android:text="Block"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_cancel_avail"
+            android:textColor="@color/Black_nb"
+            fontPath="fonts/Montserrat-SemiBold.ttf"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:paddingVertical="5dp"
+            android:elevation="5dp"
+            android:background="@drawable/button_flexible1"
+            android:text="Cancel"/>
+
+         </LinearLayout>
+
+
+</RelativeLayout>

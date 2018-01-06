@@ -104,6 +104,11 @@ public interface ApiInterface {
   Call<UpdateAccountResp> rf_uploadPic(@Header(header)String header_value,@Part("email") String email,
                                        @Part MultipartBody.Part upload_profile_picture);
 
+  @Multipart
+  @POST("upload_tasker_document_picture")
+  Call<UpdateAccountResp> rf_uploadDocument(@Header(header)String header_value,@Part("email") String email,
+                                       @Part MultipartBody.Part upload_document_picture);
+
 
     @Multipart
     @POST("available_balance")

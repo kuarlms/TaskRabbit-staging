@@ -62,11 +62,10 @@ import static com.bumptech.glide.request.RequestOptions.bitmapTransform;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    FragmentPagerAdapter adapter_view;
+
     SharedPreferences sp;
     SharedPreferences.Editor  editor ;
     ViewPager vpPager;
-    data_main_home main_cat;
     TabLayout tabLayout;
     List<data_main_home> list_main_cat = new ArrayList<>();
     ProgressBar pb;

@@ -29,27 +29,13 @@
         android:orientation="vertical"
         android:layout_margin="20dp"
         android:layout_below="@+id/appbar">
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight=".3">
 
-        </FrameLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="6">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerInParent="true"
-                android:src="@android:drawable/menuitem_background"
-                android:id="@+id/iv_account_pic"/>
-        </RelativeLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight=".3">
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="4">
 
         </FrameLayout>
         <Button
@@ -64,7 +50,33 @@
             android:paddingVertical="5dp"
             android:elevation="5dp"
             android:background="@drawable/button_save"
-            android:text="Upload Document"/>
+            android:text="Connect to Stripe"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1">
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4">
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/webview_stripe"
+            android:layout_height="match_parent">
+
+        </WebView>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3">
+
+        </FrameLayout>
+
 
 
          </LinearLayout>

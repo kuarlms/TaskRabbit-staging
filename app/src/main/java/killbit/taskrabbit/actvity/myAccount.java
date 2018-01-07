@@ -120,7 +120,7 @@ public class myAccount extends FragmentActivity implements vehicle_list_adp.OnRe
 
                 break;
             case 1:
-                Intent inth = new Intent(myAccount.this,Availability.class);
+                Intent inth = new Intent(myAccount.this,AvailabltyCalendar.class);
                 startActivity(inth);
 
                 break;

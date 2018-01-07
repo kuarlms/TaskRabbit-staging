@@ -74,7 +74,7 @@ public class SignIn_email extends Activity implements Validator.ValidationListen
         editor =sp.edit();
 
         mAPIService = ApiUtils.getAPIService();
-        i = new Intent(SignIn_email.this,taskHistory.class);
+        i = new Intent(SignIn_email.this,MainActivity.class);
 
         btn_login = findViewById(R.id.button_login);
 

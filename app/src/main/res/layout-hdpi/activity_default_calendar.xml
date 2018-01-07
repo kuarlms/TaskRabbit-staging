@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Availablity"
+        app:titleTextColor="@color/white"
+        android:minHeight="?attr/actionBarSize" />
+
+    <com.applikeysolutions.cosmocalendar.view.CalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_settings"
+        android:layout_below="@id/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_account"
+                android:textColor="#ffffff"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:textSize="15dp"
+                android:textAllCaps="false"
+                android:paddingVertical="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/button_save"
+                android:text="Block"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn_cancel_avail"
+                android:textColor="@color/Black_nb"
+                fontPath="fonts/Montserrat-SemiBold.ttf"
+                android:textSize="15dp"
+                android:textAllCaps="false"
+                android:paddingVertical="5dp"
+                android:elevation="5dp"
+                android:background="@drawable/button_flexible1"
+                android:text="Cancel"/>
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rg_orientation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:checkedButton="@+id/rb_vertical">
+
+            <RadioButton
+                android:id="@+id/rb_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal" />
+
+            <RadioButton
+                android:id="@+id/rb_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_selection_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checkedButton="@+id/rb_single">
+
+            <RadioButton
+                android:id="@+id/rb_single"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single" />
+
+            <RadioButton
+                android:id="@+id/rb_multiple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiple" />
+
+            <RadioButton
+                android:id="@+id/rb_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/range" />
+
+            <RadioButton
+                android:id="@+id/rb_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/none" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

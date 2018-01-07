@@ -158,7 +158,7 @@ public class Document extends FragmentActivity implements CropImageView.OnSetIma
         cropping_dialog = new Dialog(this, R.style.com_facebook_auth_dialog);
         cropping_dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT,
                 WindowManager.LayoutParams.MATCH_PARENT);
-        cropping_dialog.setContentView(R.layout.cropping_image);
+        cropping_dialog.setContentView(R.layout.cropping_image_document);
 
 
         mCropImageView = (CropImageView) cropping_dialog.findViewById(R.id.croppingImageView);
@@ -318,7 +318,8 @@ public class Document extends FragmentActivity implements CropImageView.OnSetIma
                     editor.putString(sp_task.Sp_profile_doc,response.body().getPro_pic_doc());
 
                     editor.commit();
-                    Glide.with(getApplicationContext()).load(response.body().getProPic()).apply(bitmapTransform(new CircleCrop())).into(iv_pic);
+                    GlideApp.with(_activity).load(sp.getString(sp_task.Sp_profile_doc, ""))
+                            .error(R.drawable.ic_logo) .into(iv_pic);
 
 
                 }else {

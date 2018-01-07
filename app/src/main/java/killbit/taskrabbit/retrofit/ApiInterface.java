@@ -75,9 +75,22 @@ public interface ApiInterface {
   @POST("get_services_listing_inof")
   Call<MyServicesResp> rf_myServicesAdd(@Header(header)String header_value, @Part("email") String email);
 
+  @Multipart
+  @POST("get_blocked_dates")
+  Call<StatusResp> rf_get_blocked_dates(@Header(header)String header_value, @Part("email") String email);
 
   @Multipart
-  @POST("user_login_process")
+  @POST("save_block_date")
+  Call<StatusResp> rf_save_block_date(@Header(header)String header_value, @Part("email") String email,
+                                          @Part("task_date") String task_date,
+                                          @Part("task_time") String task_time);
+
+
+ /* task_date [dates in comma ex: 2017-10-23,2017-10-24]
+  task_time*/
+
+  @Multipart
+  @POST("tasker_login_process")
   Call<LoginResp> rf_signIn(@Header(header)String header_value, @Part("login_email") String login_email,
                             @Part("login_password") String login_password);
 

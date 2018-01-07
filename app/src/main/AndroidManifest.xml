@@ -66,7 +66,13 @@
             android:screenOrientation="sensorPortrait">
 
         </activity>
+        <activity
+            android:name=".actvity.AvailabltyCalendar"
+            android:label="@string/app_name"
+            android:theme="@style/MyMaterialTheme"
+            android:screenOrientation="sensorPortrait">
 
+        </activity>
         <activity
             android:name=".actvity.MyServices"
             android:label="@string/app_name"

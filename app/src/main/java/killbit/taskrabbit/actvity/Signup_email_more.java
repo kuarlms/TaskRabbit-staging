@@ -20,6 +20,9 @@ import com.mobsandgeeks.saripaar.annotation.Email;
 import com.mobsandgeeks.saripaar.annotation.NotEmpty;
 import com.mobsandgeeks.saripaar.annotation.Password;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -144,11 +147,28 @@ public class Signup_email_more extends Activity  {
         email = sp.getString(sp_task.Sp_email,"");
         cbvOthers.setChecked(true);
 
-        CityList.add("123");
-        CityList.add("123");
-        CityList.add("123");
-        CityList.add("123");
-        CityList.add("123");
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(
+                    new InputStreamReader(getAssets().open("citysjson.txt"), "UTF-8"));
+
+            // do reading, usually loop until end of file reading
+            String mLine;
+            while ((mLine = reader.readLine()) != null) {
+                //process line
+
+            }
+        } catch (IOException e) {
+            //log the exception
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    //log the exception
+                }
+            }
+        }
 
         radioGroupfrom.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -279,7 +299,7 @@ public class Signup_email_more extends Activity  {
         tasker_step1 = "0";
         tasker_step2 = "1";
         Intent i ;
-        i = new Intent(Signup_email_more.this,taskHistory.class);
+        i = new Intent(Signup_email_more.this,MainActivity.class);
 
         mAPIService.rf_signUpMore(ApiInterface.header_value,work_city,home,email,street,city,state,zipcode,
                 dob,detail1,detail2,detail3,hear_about,vehiclesList.toString(),tasker_step1,tasker_step2,
